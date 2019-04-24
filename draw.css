@@ -1,0 +1,193 @@
+#cont{
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	width: 60%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin: auto;
+	border-radius: 10px;
+	background-color: #f1f4f1;
+	border: 3px solid #077a39; }
+
+#menu{
+	box-sizing: border-box;
+	width: 20%;
+	} 
+
+#vas{
+	width: 80%;
+	}
+h1{
+	color: #077a39;
+}
+
+#menu > div{
+	width: 100%;
+	height: 100px;
+	margin: 0px;
+	box-sizing: border-box;
+	border: 4px solid #077a39;
+	display: inline;
+	float: right;
+	color: white;
+}
+
+canvas{
+	background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+	width: 100%;
+	height: 100%;
+}
+
+
+#sqr{
+	background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(images/square.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; }
+#circle{
+	background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(images/circle.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; }	
+#line{
+	background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(images/line.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; }
+#col{
+	background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; }
+
+#arcdown{background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(images/arcdown.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; }
+#arcrait{background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(images/arcrait.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; }
+#arcleft{background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(images/arcdown.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; }
+#arcup{background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(images/arcup.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; }
+
+#color{
+	display: block;
+	width: 100px;
+	height: 50px;
+	margin-top: 15px;
+
+}
+
+table{
+	margin-top: -70px;
+	border-collapse: collapse;
+}
+td{	
+	border: 4px solid #077a39;
+	border-collapse: collapse;
+	width: 70px;
+	height: 45px;
+}
+
+label{
+	font-size: 120%;
+	display: block;
+	margin-top: 40px;}
+
+/*  for Smaller screens*/	
+
+@media screen and (max-width: 450px){
+#cont{
+	display: block;
+	width: 100%;
+}
+
+#menu{
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	height: 100px;
+
+	} 
+#menu > div{
+	width: 20%;
+	height: 90px;
+	box-sizing: border-box;
+	border: 2px solid #077a39;
+	display: inline;
+	float: left;
+	color: white;
+}
+
+#color{
+	display: inline;
+	width: 50px;
+	height: 50px;
+	margin-top: 9px;
+
+}
+
+table{
+	margin-top: -65px;
+	border-collapse: collapse;
+}
+td{	
+	border: 1px solid #077a39;
+	border-collapse: collapse;
+	width: 35px;
+	height: 40.5px;
+}
+
+
+#vas{
+	margin-top: -10px;
+	box-sizing: border-box;
+	width: 100%;
+	border: 2px solid #077a39;
+	display: block;
+	height: 400px;
+	}
+
+#cont{
+
+	width: 100%;
+	overflow-x: hidden;
+	/*overflow-y: hidden;*/
+	margin: auto;
+	border-radius: 10px;
+	background-color: #f1f4f1;
+	border: 3px solid #077a39; }
+
+
+
+}
+
+
+/*Ta screen*/
+
+@media screen and (min-width: 760px ) and (max-width: 1024px){
+
+	#cont{
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin: auto;
+	border-radius: 10px;
+	background-color: #f2f1f4;
+	border: 3px solid #077a39; }
+
+	
+}
