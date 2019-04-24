@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRAW AND PAINT</title>
+	<link rel="stylesheet" href="draw.css">
+</head>
+<body>
+	<center>
+		<h1>DRAW </h1>
+		<div id="cont">
+
+			<div id="menu">
+				
+				<div  id="sqr" title="Click here to draw Square"> <label>Square</label> </div>
+				<div id="circle" title="Click here to draw Circle"><label>Circle</label></div>
+				<div id="arc" title="Click here to draw Arc">
+				<label>Arc</label>
+					<table border="0.5">
+					<tr>	<td id="arcleft"></td>	 <td id="arcrait"></td>	</tr>
+					<tr>	<td id="arcup"></td>	 <td id="arcdown"></td>	</tr>
+					</table>
+					
+				</div>
+				<div id="line" title="Click here to draw Line"><label> Line</label></div>
+				<div id="col" title="Click here to draw Color"><input type="color" id="color" name=""> <span>Color<span></div>
+				
+
+			</div>
+
+		<div id="vas"><canvas></canvas></div>
+
+		</div>
+	</center>
+</body>
+<script type="text/javascript" src="draw.js"></script>
+</html>
