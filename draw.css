@@ -1,3 +1,5 @@
+body{
+	font-family: "century gothic";}
 #cont{
 	box-sizing: border-box;
 	display: -webkit-flex;
