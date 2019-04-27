@@ -6,32 +6,36 @@
 	<title>DRAW AND PAINT</title>
 	<link rel="stylesheet" href="draw.css">
 </head>
-<body>
+<body onload="loader()">
 	<center>
 		<h1>DRAW </h1>
 		<div id="cont">
 
 			<div id="menu">
 				
-				<div  id="sqr" title="Click here to draw Square"> <label>Square</label> </div>
-				<div id="circle" title="Click here to draw Circle"><label>Circle</label></div>
+				<div  id="sqr" title="Click here to draw Square" onclick="rec=true; crc=false; up=false; ryt=false;lef=false; don=false; lin=false;"> <label>Square</label> </div>
+				<div id="circle" title="Click here to draw Circle" onclick="rec=false; crc=true; up=false; ryt=false;lef=false; don=false; lin=false;"><label>Circle</label></div>
 				<div id="arc" title="Click here to draw Arc">
 				<label>Arc</label>
 					<table border="0.5">
-					<tr>	<td id="arcleft"></td>	 <td id="arcrait"></td>	</tr>
-					<tr>	<td id="arcup"></td>	 <td id="arcdown"></td>	</tr>
+					<tr>	<td id="arcleft" onclick="rec=false; crc=false; up=false; ryt=true;lef=false; don=false; lin=false;"></td> <td id="arcrait" onclick="rec=false; crc=false; up=false; ryt=false;lef=true; don=false; lin=false;"></td>	</tr>
+					<tr>	<td id="arcup" onclick="rec=false; crc=false; up=true; ryt=false;lef=false; don=false; lin=false;"></td>	 <td id="arcdown" onclick="rec=false; crc=false; up=false; ryt=false;lef=false; don=true; lin=false;"></td>	</tr>
 					</table>
 					
 				</div>
-				<div id="line" title="Click here to draw Line"><label> Line</label></div>
+				<div id="line" title="Click here to draw Line" onclick="rec=false; crc=false; up=false; ryt=false;lef=false; don=false; lin=true;"><label> Line</label></div>
 				<div id="col" title="Click here to draw Color"><input type="color" id="color" name=""> <span>Color<span></div>
 				
 
 			</div>
 
-		<div id="vas"><canvas></canvas></div>
-
+		<div id="vas"  onmousedown="downn(event)" onmouseup="upp(event)" onmousemove="see(event)">
+			<canvas id="mycanvas" width="624" height="496"  ></canvas>
 		</div>
+
+	</div>
+	<p id="pp"> <span id="p"></span> <br> <span> Your current mouse point is: </span><span id="demo"></span> </p>
+
 	</center>
 </body>
 <script type="text/javascript" src="draw.js"></script>
