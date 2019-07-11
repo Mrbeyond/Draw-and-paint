@@ -23,7 +23,7 @@ if (don){ cdown()};
 if (crc){ circ()};
  if (rec){
   if (fill) {rect(); draw2.fillRect(x,y,w,h); draw2.closePath(); }
-  if (stroke){rect(); draw.strokeRect(x,y,w,h); draw.closePath()}   };
+  if (stroke){rect(); draw2.strokeRect(x,y,w,h); draw2.closePath()}   };
 if (lin){ line()};
 if (up){ cup()};
 if (lef){ cleft()}; styling();}
@@ -91,13 +91,15 @@ function cleft(){
  	draw.bezierCurveTo(c1,y,c2,h,w,h) ;	}
 
 function rect(){
-draw.strokeStyle = color.value;
+draw2.strokeStyle = color.value;
 draw2.fillStyle = color.value;
+draw2.beginPath();
 if (w>=x){  w= w-x} else{if(w<x){ w=-(x-w)}};
 if (h>=y){  h= h-y} else{if(h<y){h=-(y-h)}};  } 
 
 function see(event) {
-aa= event.offsetX;
-bb= event.offsetY;
- demo.innerHTML = aa + " , " + bb; } 
+	bb= event.offsetY;
+	aa= event.offsetX;
+demo.innerHTML = aa + " , " + bb;
+} 
 
